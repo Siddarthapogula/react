@@ -19,7 +19,6 @@
 - Diagnostic 
 - A good Error Handling 
 - Tree shaking -> A algorithm which removes the unwanted code for you.. which make your code compressed.. and efficent.
-- https -> it provides --https
-loading
+- https -> it provides --https loading
 
 ## !!! Yeah parcel is such a "BEAST" right.!!!
