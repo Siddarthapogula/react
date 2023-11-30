@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Namaste-React-Daily
-=======
 # namaste React
 
 ## Episode 2
@@ -25,4 +23,6 @@
 loading
 
 ## !!! Yeah parcel is such a "BEAST" right.!!!
->>>>>>> d8c32e5 (installed)
+
+
+this is fuck
