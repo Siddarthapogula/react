@@ -23,6 +23,3 @@
 loading
 
 ## !!! Yeah parcel is such a "BEAST" right.!!!
-
-
-this is fuck
