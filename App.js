@@ -1,38 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 
-const element1 = ( 
-    <h1>this is element1</h1>
-);
-const element2 = ( 
-    <h1>this is element2</h1>
-);
-const element3 = ( 
-    <h1>this is element3</h1>
-);
-const element4 = ( 
-    <h1>this is element4</h1>
-);
+const Heading = () => {
 
-const elementArray = [element1, element2, element3, element4];
+    const repo = 12;
+  useEffect(() => {
+    getRestaurants();
+  },[]);
+  const [text, setText] = useState("fuck");
 
-const ExecuteElement = function (props){
-    console.log(props.content);
-}
+  const getRestaurants = async () => {
 
-const ElementPass = ()=>{
-    return(
-        <>
-           { elementArray.map((element)=>{
-                <ExecuteElement content= {element.props.children}/>
-            })}
-        </>
-    )
-}
+      const response = await fetch(
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
 
+      const data = await response.json();
+      console.log(data);
+  };
 
-
+return (
+    <div>
+         <h1>hey</h1>
+         <button onClick={()=>{
+            text==="fuck"?setText("fuckOff"):setText("fuck")
+         }}>
+            {text}
+        </button>
+    </div>
+   
+)
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(< ElementPass />);
-
+root.render(<Heading />)
